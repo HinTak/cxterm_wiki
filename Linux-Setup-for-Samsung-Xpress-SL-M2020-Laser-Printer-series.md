@@ -31,6 +31,6 @@ Now go to http://localhost:631, navigate to "Administration", "Add Printer". You
 
 ![Add Printer Dialog](AddPrinterDialog.png)
 
-*Important*: Do not choose anything under "Make: Samsung"! None of them works. Instead, click, "Choose File" next to "Or Provide a PPD File:",
-and pick up `uld/noarch/share/ppd/Samsung_M2020_Series.ppd` from where you unpacked the earlier downloaded `tar.gz`. Continue with "Add Printer". That's it.
+*Important*: Do not choose anything under "Make: Samsung"! None of them works. Instead, click the "Choose File" button next to "Or Provide a PPD File:".
+Pick up `uld/noarch/share/ppd/Samsung_M2020_Series.ppd` from where you unpacked the earlier downloaded `tar.gz`. Continue with "Add Printer". That's it.
 
