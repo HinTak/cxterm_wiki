@@ -9,7 +9,7 @@ Bus 001 Device 004: ID 04e8:3321 Samsung Electronics Co., Ltd
 ...
 ```
 
-The official place to download the latest driver is https://support.hp.com/us-en/drivers (the division was sold to HP...), search
+The official place to download the latest driver is https://support.hp.com/us-en/drivers (the whole division was sold to HP...), search
 for "Samsung Xpress SL-M2020 Laser Printer series":
 
 ![Download from HP](download.png)
@@ -32,5 +32,5 @@ Now go to http://localhost:631, navigate to "Administration", "Add Printer". You
 ![Add Printer Dialog](AddPrinterDialog.png)
 
 *Important*: Do not choose anything under "Make: Samsung"! None of them works. Instead, click, "Choose File" next to "Or Provide a PPD File:",
-and pick up `uld/noarch/share/ppd/Samsung_M2020_Series.ppd` from where you unpacked the downloaded `tar.gz`. Continue with "Add Printer". That's it.
+and pick up `uld/noarch/share/ppd/Samsung_M2020_Series.ppd` from where you unpacked the earlier downloaded `tar.gz`. Continue with "Add Printer". That's it.
 
