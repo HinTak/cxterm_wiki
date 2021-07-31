@@ -1,0 +1,90 @@
+!===============================================================================
+! This file should be applied as "xmodmap this_file". Merely naming it as
+! ".xmodmaprc" has no effect.
+!===============================================================================
+
+! Emacs's EDT mode and TPU-EDT mode (obsolete-since 24.5, still present in 27.2)
+! are different things.
+
+!-------------------------------------------------------------------------------
+! The content of this file is based on the follow information
+!
+!     $ xmodmap -pm | grep 'Num_Lock'
+!     mod2        Num_Lock (0x4d)
+!
+!     $ xmodmap -pke | grep -E '(F12|Num_Lock)'
+!     keycode  77 = Num_Lock NoSymbol Num_Lock
+!     keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
+!
+!-------------------------------------------------------------------------------
+
+! See also cxterm's Doc/x-resrc , xterm's "KEY BINDINGS"->"Actions",
+! ->"Default Key Bindings", ->"Custom Key Bindings" sections.
+
+!-------------------------------------------------------------------------------
+!     $ xmodmap -pm | grep 'Mode_switch'
+!     mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
+!     $ xmodmap -pke | grep 'Mode_switch'
+!     keycode 203 = Mode_switch NoSymbol Mode_switch
+
+!     $  xmodmap -pke | grep Delete
+!     keycode  91 = KP_Delete KP_Decimal KP_Delete KP_Decimal
+!     keycode 119 = Delete NoSymbol Delete
+!     $  xmodmap -pke | grep BackSpace
+!     keycode  22 = BackSpace BackSpace BackSpace BackSpace
+!-------------------------------------------------------------------------------
+
+! cxterm seems to interprete BackSpace and Delete key in the opposite sense
+! as the rest of xterm. Hence it is a very bad idea to remap either, as xmodmap
+! changes applies across the whole of X11.
+
+!-------------------------------------------------------------------------------
+!       keycode NUMBER = KEYSYMNAME ...
+!               The list of keysyms is assigned to the indicated keycode (which
+!               may be specified in decimal, hex or octal and can be determined
+!               by  running  the  xev program).  Up to eight keysyms may be at-
+!               tached to a key, however the last four are not used in any  ma-
+!               jor  X server implementation.  The first keysym is used when no
+!               modifier key is pressed in conjunction with this key, the  sec-
+!               ond with Shift, the third when the Mode_switch key is used with
+!               this key and the fourth when both  the  Mode_switch  and  Shift
+!               keys are used.
+
+!       keycode any = KEYSYMNAME ...
+!               If  no  existing key has the specified list of keysyms assigned
+!               to it, a spare key on the keyboard is selected and the  keysyms
+!               are  assigned  to  it.  The list of keysyms may be specified in
+!               decimal, hex or octal.
+
+!       keysym KEYSYMNAME = KEYSYMNAME ...
+!               The KEYSYMNAME on the left hand side is translated into  match-
+!               ing  keycodes  used to perform the corresponding set of keycode
+!               expressions.  Note that if the same keysym is bound to multiple
+!               keys, the expression is executed for each matching keycode.
+
+
+!       clear MODIFIERNAME
+!               This removes all entries in the modifier map for the given mod-
+!               ifier, where valid name are: Shift, Lock, Control, Mod1,  Mod2,
+!               Mod3,  Mod4,  and Mod5 (case does not matter in modifier names,
+!               although it does matter for all  other  names).   For  example,
+!               ``clear  Lock'' will remove all any keys that were bound to the
+!               shift lock modifier.
+
+!       add MODIFIERNAME = KEYSYMNAME ...
+!               This adds all keys containing the given keysyms  to  the  indi-
+!               cated  modifier  map.  The keysym names are evaluated after all
+!               input expressions are read to make it easy to write expressions
+!               to swap keys (see the EXAMPLES section).
+
+!       able  to  the  user.  If the ttyModes resource in xterm is set as well,
+!       all terminal emulator windows will use the same key for erasing charac-
+!       ters:
+!       %  xmodmap -e "keysym BackSpace = Delete"
+!       %  echo "XTerm*ttyModes:  erase ^?" | xrdb -merge
+
+!-------------------------------------------------------------------------------
+clear  mod2
+keycode  77 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
+keycode  96 = Num_Lock NoSymbol Num_Lock
+add mod2 = Num_Lock
