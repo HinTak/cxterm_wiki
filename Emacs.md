@@ -16,10 +16,12 @@ to tell it to "Revisit this file immediately using specified coding system".
 General tips:
 
 - `C-x \` to toggle current input method and ascii.
+- You select the one you mean using keys such as `C-f` (forward), `C-b` (backward), `C-n` (next line), `C-p` (previous line) (or the
+arrow keys), and digits,  `C-SPC` for current position . `C-x 8 RET` (`M-x insert-char`) prompts raw code points in hex.
 - `C-x 1` to go back to single screen.
 - `C-x o` to switch to other screen.
 
-There are three ways of telling emacs that the current file is in GB2312 encoding (for example):
+There are three ways of telling emacs that the current file is in, for example, GB2312 encoding:
 
 - `LANG=zh_CN.GB2312 emacs ...` at launch
 - `-*- coding: gb2312 -*-` as part of the first line of the file, or equivalent at the end of file (see Chapter 33, **Customization**, **Local Variables in files**, **Specifying File Variables**):
