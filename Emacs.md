@@ -15,6 +15,7 @@ to tell it to "Revisit this file immediately using specified coding system".
 
 General tips:
 
+- `C-x \` to toggle current input method and ascii.
 - `C-x 1` to go back to single screen.
 - `C-x o` to switch to other screen.
 
