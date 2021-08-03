@@ -38,7 +38,7 @@ Latest Manuals:
 - [Emacs quick reference Card, pdf](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
 - [EDT emulation, html](https://www.gnu.org/software/emacs/manual/html_mono/edt.html)
 
-Subset: [Emacs Chapter 19, pdf](emacs-27-chapter19.pdf),
+Subset (hosted and copied here): [Emacs Chapter 19, pdf](emacs-27-chapter19.pdf),
 [Emacs Lisp reference, Chapter 33, pdf](elisp-27-chapter33.pdf), [EDT emulation, pdf](edt.pdf).
 
 Reference: [Intro to emacs Lisp Programming](https://www.gnu.org/software/emacs/manual/pdf/eintr.pdf) and
