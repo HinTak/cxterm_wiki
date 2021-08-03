@@ -31,3 +31,15 @@ There are three ways of telling emacs that the current file is in GB2312 encodin
 ```
 
 - "**Set Language Environment**" and "**Set Coding Systems**" (both), as above.
+
+Latest Manuals:
+
+- [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
+- [Emacs quick reference Card, pdf](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
+- [EDT emulation, html](https://www.gnu.org/software/emacs/manual/html_mono/edt.html)
+
+Subset: [Emacs Chapter 19, pdf](emacs-27-chapter19.pdf),
+[Emacs Lisp reference, Chapter 33, pdf](elisp-27-chapter33.pdf), [EDT emulation, pdf](edt.pdf).
+
+Reference: [Intro to emacs Lisp Programming](https://www.gnu.org/software/emacs/manual/pdf/eintr.pdf) and
+[Emacs Lisp Reference](https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf)
