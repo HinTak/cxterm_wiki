@@ -32,6 +32,10 @@ There are three ways of telling emacs that the current file is in GB2312 encodin
 
 - "**Set Language Environment**" and "**Set Coding Systems**" (both), as above.
 
+Cut and Paste with other applications: Emacs is clever enough and treats by default everything from X11
+(as `x-select-request-type`) in the order `UTF8_STRING`, `COMPOUND_TEXT`, `STRING`, regardless and independent
+of the current file buffer content.
+
 # Latest Manuals:
 
 - [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
