@@ -22,7 +22,7 @@ General tips:
 There are three ways of telling emacs that the current file is in GB2312 encoding (for example):
 
 - `LANG=zh_CN.GB2312 emacs ...` at launch
-- `-*- coding: gb2312 -*-` as part of the first line of the file, or equivalent at the end of file (see Chapter 33, Customization, Local Variables in files, Specifying File Variables):
+- `-*- coding: gb2312 -*-` as part of the first line of the file, or equivalent at the end of file (see Chapter 33, **Customization**, **Local Variables in files**, **Specifying File Variables**):
 
 ```
 /* Local Variables: */
@@ -30,4 +30,4 @@ There are three ways of telling emacs that the current file is in GB2312 encodin
 /* End:             */
 ```
 
-- "Set Language Environment" and "Set Coding Systems" (both), as above.
+- "**Set Language Environment**" and "**Set Coding Systems**" (both), as above.
