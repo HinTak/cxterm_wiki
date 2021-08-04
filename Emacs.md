@@ -46,6 +46,7 @@ of the current file buffer content.
 
 Subset (hosted and copied here): [Emacs Chapter 19, pdf](emacs-27-chapter19.pdf),
 [Emacs Lisp reference, Chapter 33, pdf](elisp-27-chapter33.pdf), [EDT emulation, pdf](edt.pdf).
+Also [Annnotated sample xmodmap file](xmodmap.txt) for re-mapping the Num_Lock as GOLD key.
 
 Reference: [Intro to emacs Lisp Programming](https://www.gnu.org/software/emacs/manual/pdf/eintr.pdf) and
 [Emacs Lisp Reference](https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf)
