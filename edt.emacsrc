@@ -1,1 +1,16 @@
+;; Sample .emacs from the EDT manual, section 1.1
+
 (add-hook 'emacs-startup-hook 'edt-emulation-on)
+
+;; Remember to run:
+;;     emacs -q -l edt-mapper -f edt-mapper
+;;
+;; see /usr/share/emacs/27.2/lisp/emulation/edt-mapper.el.gz
+;;     /usr/share/emacs/27.2/lisp/emulation/edt-mapper.elc
+
+;; 7.3 Enabling EDT Control Key Sequence Bindings
+;;
+;;     For diehard EDT users, enable most of the original EDT control key
+;;     sequence bindings (i.e. replacing default Emacs key bindings):
+
+(setq edt-use-EDT-control-key-bindings t)
