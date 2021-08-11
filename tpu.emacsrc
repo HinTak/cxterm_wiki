@@ -1,1 +1,5 @@
+;;
+;; The below is equivalent to running:
+;;     emacs -l tpu-edt -f tpu-edt
+;;
 (require 'tpu-edt) (tpu-edt)
