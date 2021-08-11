@@ -14,3 +14,5 @@
 ;;     sequence bindings (i.e. replacing default Emacs key bindings):
 
 (setq edt-use-EDT-control-key-bindings t)
+
+(add-to-list 'load-path "./")
