@@ -1,0 +1,11 @@
+(tpu-edt-on)
+(setq default-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+ 
+;;; Remap PuTTY's editing keys to match the LK201 layout
+(define-key CSI-map "2~" 'tpu-search)
+(define-key CSI-map "1~" 'tpu-paste)
+(define-key CSI-map "5~" 'tpu-cut)
+(define-key CSI-map "3~" 'tpu-select)
+(define-key CSI-map "4~" 'tpu-scroll-window-down)
+(define-key CSI-map "6~" 'tpu-scroll-window-up)
