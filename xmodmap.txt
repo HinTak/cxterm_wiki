@@ -16,6 +16,10 @@
 !     keycode  77 = Num_Lock NoSymbol Num_Lock
 !     keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12
 !
+!     $ xmodmap -pke | grep -E '(F1 |Num_Lock)'
+!     keycode  67 = F1 F1 F1 F1 F1 F1 XF86Switch_VT_1
+!     keycode  77 = Num_Lock NoSymbol Num_Lock
+!
 !-------------------------------------------------------------------------------
 
 ! See also cxterm's Doc/x-resrc , xterm's "KEY BINDINGS"->"Actions",
