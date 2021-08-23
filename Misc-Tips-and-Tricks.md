@@ -54,3 +54,12 @@ $ LANG=zh_CN.GB2312 emacs phone-gb.txt
 $ LANG=zh_TW.Big5 emacs phone-big5.txt
 ```
 
+## Apache Web Server
+
+In `/etc/httpd/conf/httpd.conf` (server-wide, Apache 2.4.48 on Fedora), or `.htaccess` (per-directory):
+
+```
+AddDefaultCharset GB2312
+```
+
+To get "*.txt" files be shown as GB2312 on web browers.
