@@ -54,3 +54,15 @@ Reference: [Intro to emacs Lisp Programming](https://www.gnu.org/software/emacs/
 # Built-in Help:
 
 ![Help Describe Chinese](ScreenshotHelpDescribe.png)
+
+# Old Versions
+
+Package `emacs25` is available on Ubuntu bionic (18.04LTS).
+
+Older versions are under
+[current](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs/),
+[emacs21](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs21/),
+[emacs22](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs22/),
+[emacs23](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs23/),
+[emacs24](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs24/),
+[emacs25](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs25/).
