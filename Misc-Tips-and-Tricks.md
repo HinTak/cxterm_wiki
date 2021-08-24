@@ -66,4 +66,5 @@ AddCharset GB2312 .txt
 To get "*.txt" files be shown as GB2312 on web browers. The default is `Content-Type: text/html; charset=iso-8859-1` in the HTTP header.
 See [a related Apache bugzilla issue](https://bz.apache.org/bugzilla/show_bug.cgi?id=23421) for background information.
 See [AddCharset in mod_mime](https://httpd.apache.org/docs/2.4/mod/mod_mime.html#addcharset) and
-[AddDefaultCharset in core Apache](https://httpd.apache.org/docs/2.4/mod/core.html#adddefaultcharset) for details.
+[AddDefaultCharset in core Apache](https://httpd.apache.org/docs/2.4/mod/core.html#adddefaultcharset) for details; and
+[IANA Registered Character Sets](http://www.iana.org/assignments/character-sets/character-sets.xhtml)
