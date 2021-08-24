@@ -66,3 +66,5 @@ Older versions are under
 [emacs23](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs23/),
 [emacs24](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs24/),
 [emacs25](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs25/).
+
+Some older packaging is missing [dfsg](https://en.wikipedia.org/wiki/Debian_Free_Software_Guidelines)-compliance.
