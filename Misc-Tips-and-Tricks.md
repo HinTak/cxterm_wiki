@@ -62,4 +62,5 @@ In `/etc/httpd/conf/httpd.conf` (server-wide, Apache 2.4.48 on Fedora), or `.hta
 AddDefaultCharset GB2312
 ```
 
-To get "*.txt" files be shown as GB2312 on web browers.
+To get "*.txt" files be shown as GB2312 on web browers. The default is `Content-Type: text/html; charset=iso-8859-1` in the HTTP header.
+See [a related Apache bugzilla issue](https://bz.apache.org/bugzilla/show_bug.cgi?id=23421) for background information.
