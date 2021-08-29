@@ -27,6 +27,8 @@
 !     keycode  95 = F11 F11 F11 F11 F11 F11 XF86Switch_VT_11 F11 F11 XF86Switch_VT_11 F11 F11 F11 F11 XF86Switch_VT_11
 !     keycode  96 = F12 F12 F12 F12 F12 F12 XF86Switch_VT_12 F12 F12 XF86Switch_VT_12 F12 F12 F12 F12 XF86Switch_VT_12
 !
+!     $ xev # press key to find that key's X11 keycode and keysym
+!
 !-------------------------------------------------------------------------------
 
 ! See also cxterm's Doc/x-resrc , xterm's "KEY BINDINGS"->"Actions",
