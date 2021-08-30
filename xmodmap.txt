@@ -31,6 +31,10 @@
 !
 !-------------------------------------------------------------------------------
 
+! Newer systems use setxkbmap
+
+!-------------------------------------------------------------------------------
+
 ! See also cxterm's Doc/x-resrc , xterm's "KEY BINDINGS"->"Actions",
 ! ->"Default Key Bindings", ->"Custom Key Bindings" sections.
 
