@@ -1,3 +1,6 @@
+[Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
+the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
+
 systemd config - /etc/vconsole.conf
 
 /etc/X11/xorg.conf.d/00-keyboard.conf
