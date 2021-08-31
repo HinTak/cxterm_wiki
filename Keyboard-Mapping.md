@@ -1,3 +1,5 @@
+[Gentoo keyboard layout switching](https://wiki.gentoo.org/wiki/Keyboard_layout_switching),
+
 [Freedesktop Shared default keyboard shortcuts](https://www.freedesktop.org/wiki/Specifications/default-keys-spec/),
 [Gnome HIG Standard Keyboard Shortcuts](https://developer.gnome.org/hig/reference/keyboard.html),
 [GNOME keyboard shortcuts](https://www.redhat.com/sysadmin/gnome-keyboard-shortcuts),
