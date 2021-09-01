@@ -43,6 +43,7 @@ keymaps(5), loadkeys(1), dumpkeys(1), showkey(1), xmodmap(1), xkeyboard-config(7
 /usr/lib/kbd/keymaps/
 
 [Gentoo keyboard layout switching](https://wiki.gentoo.org/wiki/Keyboard_layout_switching),
+[Dated Ubuntu instructions on Apple Keyboard](https://help.ubuntu.com/community/AppleKeyboard)
 
 [Freedesktop Shared default keyboard shortcuts](https://www.freedesktop.org/wiki/Specifications/default-keys-spec/),
 [Gnome HIG Standard Keyboard Shortcuts](https://developer.gnome.org/hig/reference/keyboard.html),
