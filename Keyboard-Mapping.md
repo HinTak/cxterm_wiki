@@ -13,11 +13,11 @@ See `/usr/share/X11/xkb/types/numpad` and `/usr/share/X11/xkb/types/extra`.
 
 Via `gnome-tweaks`:
 
-![gnome-tweaks](Screenshot from 2021-09-01 01-50-37.png)
+![gnome-tweaks](Screenshot-gnome-tweaks.png)
 
 via `dconf-editor`:
 
-![Download from HP](Screenshot from 2021-09-01 01-54-48.png)
+![dconf-editor](Screenshot-dconf.png)
 
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
