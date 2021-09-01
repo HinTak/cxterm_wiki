@@ -23,6 +23,8 @@ via `dconf-editor`:
 
 - `setxkbmap -print` shows the active keymap.
 
+- `setxkbmap -print | xkbcomp - $DISPLAY` sync's the client with the server.
+
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
