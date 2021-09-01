@@ -25,6 +25,9 @@ via `dconf-editor`:
 
 - `setxkbmap -print | xkbcomp - $DISPLAY` sync's the client with the server.
 
+- `localectl list-x11-keymap-options` lists available options. `list-locales`, `list-keymaps`, `list-x11-keymap-models`, `list-x11-keymap-layouts`,
+`list-x11-keymap-variants`, `list-x11-keymap-options` are other useful options.
+
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
