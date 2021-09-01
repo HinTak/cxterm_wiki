@@ -19,6 +19,10 @@ via `dconf-editor`:
 
 ![dconf-editor](Screenshot-dconf.png)
 
+- `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
+
+- `setxkbmap -print` shows the active keymap.
+
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
