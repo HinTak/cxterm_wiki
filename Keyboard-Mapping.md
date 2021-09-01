@@ -30,6 +30,7 @@ via `dconf-editor`:
 - `localectl list-x11-keymap-options` lists available options. `list-locales`, `list-keymaps`, `list-x11-keymap-models`, `list-x11-keymap-layouts`,
 `list-x11-keymap-variants`, `list-x11-keymap-options` are other useful options.
 
+- Check `gsettings get org.gnome.settings-daemon.peripherals.keyboard numlock-state`
 
 - Check `Preference >accessibility > Mouse: "Control the Pointer using keypad"` and/or `Settings > universal Access > pointing and clicking: "Mouse keys"`.
 Turn it off!
