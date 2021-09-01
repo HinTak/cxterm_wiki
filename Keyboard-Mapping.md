@@ -23,6 +23,8 @@ via `dconf-editor`:
 
 - `setxkbmap -print` shows the active keymap.
 
+- `setxkbmap -option numpad:mac -print` sets the option on the client.
+
 - `setxkbmap -print | xkbcomp - $DISPLAY` sync's the client with the server.
 
 - `localectl list-x11-keymap-options` lists available options. `list-locales`, `list-keymaps`, `list-x11-keymap-models`, `list-x11-keymap-layouts`,
