@@ -34,6 +34,8 @@ via `dconf-editor`:
 
 - Check `gsettings get org.gnome.settings-daemon.peripherals.keyboard numlock-state`
 
+- Last resort: `gsettings set org.gnome.settings-daemon.peripherals.input-devices hotplug-command "/home/<myname>/key_settings.sh"`
+
 - Check `Preference >accessibility > Mouse: "Control the Pointer using keypad"` and/or `Settings > universal Access > pointing and clicking: "Mouse keys"`.
 Turn it off!
 
