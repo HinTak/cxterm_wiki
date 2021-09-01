@@ -30,6 +30,10 @@ via `dconf-editor`:
 - `localectl list-x11-keymap-options` lists available options. `list-locales`, `list-keymaps`, `list-x11-keymap-models`, `list-x11-keymap-layouts`,
 `list-x11-keymap-variants`, `list-x11-keymap-options` are other useful options.
 
+
+- Check `Preference >accessibility > Mouse: "Control the Pointer using keypad"` and/or `Settings > universal Access > pointing and clicking: "Mouse keys"`.
+Turn it off!
+
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
