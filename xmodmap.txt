@@ -35,6 +35,11 @@
 
 !-------------------------------------------------------------------------------
 
+! "Mode_switch" is the old-style (pre-XKB) name of the key that is called AltGr on many keyboard layouts.
+! "ISO_Level3_Shift" is the XKB version of this key.
+
+!-------------------------------------------------------------------------------
+
 ! See also cxterm's Doc/x-resrc , xterm's "KEY BINDINGS"->"Actions",
 ! ->"Default Key Bindings", ->"Custom Key Bindings" sections.
 
