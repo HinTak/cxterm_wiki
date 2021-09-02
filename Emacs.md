@@ -38,6 +38,12 @@ Cut and Paste with other applications: Emacs is clever enough and treats by defa
 (as `x-select-request-type`) in the order `UTF8_STRING`, `COMPOUND_TEXT`, `STRING`, regardless and independent
 of the current file buffer content.
 
+## Various useful things under M-x
+
+- `describe-key` and press a key
+
+- `(global-set-key [kp-5] 'goto-line)` to bind keypad-5 to `goto-line`.
+
 # Latest Manuals:
 
 - [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
