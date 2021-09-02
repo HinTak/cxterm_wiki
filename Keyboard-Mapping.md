@@ -1,23 +1,48 @@
 # Keyboard mapping in X11
 
 The simpliest way of disabling the NumLock key, and have it always on, is via
-the `numpad:mac` xkb option:
+the `numpad:mac` xkb option. There are three ways of doing it:
+
+- via `gsettings` command-line:
 
 ```
+# Check the original setting:
 $ gsettings get org.gnome.desktop.input-sources xkb-options
 ['lv3:ralt_switch']
-[Hin-Tak@localhost cxterm.wiki]$ gsettings set org.gnome.desktop.input-sources xkb-options "['lv3:ralt_switch', 'numpad:mac']"
+
+# Append 'numpad:mac' to original settings:
+$ gsettings set org.gnome.desktop.input-sources xkb-options "['lv3:ralt_switch', 'numpad:mac']"
 ```
 
 See `/usr/share/X11/xkb/types/numpad` and `/usr/share/X11/xkb/types/extra`.
 
-Via `gnome-tweaks`:
+
+- via `gnome-tweaks` GUI:
 
 ![gnome-tweaks](Screenshot-gnome-tweaks.png)
 
-via `dconf-editor`:
+- via `dconf-editor`:
 
 ![dconf-editor](Screenshot-dconf.png)
+
+## Using "Num_Lock" as "Clear" as on the mac keyboard (and GOLD on TPU)
+
+We need the Num_Lock key to work differently. `Apple laptop` and `Apple Aluminium` (`Apple Aluminium (ANSI)`, `Apple Aluminium (ISO)`,
+`Apple Aluminium (JIS)`) have a "Clear" key which we can emulate.
+
+Edit `/usr/share/X11/xkb/symbols/pc`, line 23:
+
+```
+    key <NMLK> {	[ Num_Lock 		]	};
+```
+
+To
+
+```
+    key <NMLK> {	[ Clear 		]	};
+```
+
+# Other tips on Debugging
 
 - `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
 
