@@ -1,0 +1,11 @@
+; restore ctrl-\ for toggling input method, to GOLD-\
+; - this file is expected to be loaded after Chinese environment then tpu-edt.
+
+;
+;     C-\ runs the command toggle-input-method (found in global-map), which
+;     is an interactive compiled Lisp function in ‘mule-cmds.el’.
+
+;     C-\ runs the command quoted-insert (found in global-map), which is an
+;     interactive compiled Lisp function in ‘simple.el’.
+
+(define-key tpu-gold-map "\\" 'toggle-input-method)
