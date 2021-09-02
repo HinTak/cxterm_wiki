@@ -3,7 +3,7 @@
 (set-default-coding-systems 'gb2312)
 (set-buffer-file-coding-system 'gb2312) ;; to save or revisit the file in the current buffer
 
-;; New file default:
+;; New file save-as default:
 
 ;; backwards compatibility as default-buffer-file-coding-system
 ;; is deprecated in 23.2.
