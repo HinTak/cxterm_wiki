@@ -1,11 +1,30 @@
-; restore ctrl-\ for toggling input method, to GOLD-\
+; ------------------------------------------------------------------------------
+; Restore CTRL-\ for toggling input method, to GOLD-\
 ; - this file is expected to be loaded after Chinese environment then tpu-edt.
+; ------------------------------------------------------------------------------
 
-;
+; Chinese environment sets up CTRL-\ as:
+
 ;     C-\ runs the command toggle-input-method (found in global-map), which
 ;     is an interactive compiled Lisp function in ‘mule-cmds.el’.
 
+; TPU-EDT sets up CTRL-\ as:
 ;     C-\ runs the command quoted-insert (found in global-map), which is an
 ;     interactive compiled Lisp function in ‘simple.el’.
 
+; Bind GOLD-\ to Chinese environment's CTRL-\ function:
+
 (define-key tpu-gold-map "\\" 'toggle-input-method)
+
+; ------------------------------------------------------------------------------
+; What TPU does:
+;     Function                          VT-key  : PC-key
+;     ---------------------------------------------------------
+;     'tpu-delete-current-line)       ; PF4     : PC keypad -
+;     'tpu-delete-current-word)       ; KP-     : PC top-half of keypad +
+;     'tpu-delete-current-char)       ; KP,     : PC bottom-half of keypad +
+;     'tpu-next-beginning-of-line)    ; ^H (BS) : "\C-h" (BS)
+
+; Bind Backspace/CTRL-h to the missing tpu-delete-current-char function:
+
+(define-key tpu-global-map [backspace] 'tpu-delete-current-char)
