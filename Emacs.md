@@ -44,6 +44,10 @@ of the current file buffer content.
 
 - `(global-set-key [kp-5] 'goto-line)` to bind keypad-5 to `goto-line`.
 
+## tpu-edt bugs
+
+- It seems to bind GOLD-GOLD (hitting the GOLD key twice) to `'keyboard-quit`. This seems wrong.
+
 # Latest Manuals:
 
 - [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
