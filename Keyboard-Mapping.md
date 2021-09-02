@@ -42,6 +42,9 @@ To
     key <NMLK> {	[ Clear 		]	};
 ```
 
+Editing `/usr/share/X11/xkb/types/numpad` (where `numpad:mac` lives) with similar changes as `/usr/share/X11/xkb/symbols/macintosh_vndr/apple`
+(where the Apple Laptop/Aluminium definitions are) does not work.
+
 # Other tips on Debugging
 
 - `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
