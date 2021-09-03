@@ -45,6 +45,15 @@ To
 Editing `/usr/share/X11/xkb/types/numpad` (where `numpad:mac` lives) with similar changes as `/usr/share/X11/xkb/symbols/macintosh_vndr/apple`
 (where the Apple Laptop/Aluminium definitions are) does not work.
 
+## Putty's Function Keys and Keypad mapping
+
+From Putty's documentation: "Application Keypad mode is a way for the server to change the behaviour of the numeric keypad." See:
+
+[4.4.3 Changing the action of the function keys and keypad](https://documentation.help/PuTTY/config-funkeys.html),
+[4.4.5 Controlling Application Keypad mode](https://documentation.help/PuTTY/config-appkeypad.html),
+[4.4.6 Using NetHack keypad mode](https://documentation.help/PuTTY/config-nethack.html),
+[4.6.1 Disabling application keypad and cursor keys](https://documentation.help/PuTTY/config-features-application.html#S4.6.1),
+
 # Other tips on Debugging
 
 - `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
