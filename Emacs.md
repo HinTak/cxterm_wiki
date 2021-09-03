@@ -53,6 +53,10 @@ of the current file buffer content.
 
 - It seems to bind GOLD-GOLD (hitting the GOLD key twice) to `'keyboard-quit`. This seems wrong.
 
+## EDT bugs
+
+- [#50364 27.2; EDT mode Xmodmap related documentation needs updating](https://debbugs.gnu.org/cgi/bugreport.cgi?bug=50364)
+
 # Latest Manuals:
 
 - [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
