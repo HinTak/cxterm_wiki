@@ -32,6 +32,9 @@ There are three ways of telling emacs that the current file is in, for example, 
 /* End:             */
 ```
 
+- It is possible to set [Emacs Directory Variables](https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html) for whole set of files
+in a directory.
+
 - "**Set Language Environment**" and "**Set Coding Systems**" (both), as above.
 
 Cut and Paste with other applications: Emacs is clever enough and treats by default everything from X11
