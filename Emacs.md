@@ -42,6 +42,8 @@ of the current file buffer content.
 
 - `describe-key` and press a key
 
+- `describe-char` describe the character under the cursor.
+
 - `(global-set-key [kp-5] 'goto-line)` to bind keypad-5 to `goto-line`.
 
 ## tpu-edt bugs
