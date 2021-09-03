@@ -54,6 +54,8 @@ From Putty's documentation: "Application Keypad mode is a way for the server to 
 [4.4.6 Using NetHack keypad mode](https://documentation.help/PuTTY/config-nethack.html),
 [4.6.1 Disabling application keypad and cursor keys](https://documentation.help/PuTTY/config-features-application.html#S4.6.1),
 
+![Putty config](Screenshot-putty-config.png)
+
 # Other tips on Debugging
 
 - `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
