@@ -85,8 +85,15 @@ Turn it off!
 Xmodmap suppport was removed as early as 2010 Oct in
 [Bug 150542 - Keyboard lost in VNC session after launching keyboard capplet](https://bugzilla.gnome.org/show_bug.cgi?id=150542),
 [keyboard: Remove horrible xmodmap fallback code](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/4239cb8a5d73af79d2cdf0f294a33d31fbbb9afe).
-[Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
+
+In gnome 3.6 onwards,
+[Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656),
+[Bug 688906 - Keybard Layout Options override xmodmap]https://bugzilla.gnome.org/show_bug.cgi?id=688906),
+[Bug 674874 - don't read .xmodmap files by default](https://bugzilla.gnome.org/show_bug.cgi?id=674874),
+[Bug 674221 - g-s-d's hotplug-command called only for mouse]((https://bugzilla.gnome.org/show_bug.cgi?id=674221),
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
+Relevant: [keyboard: Run a custom command for new keyboards](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/a90f42b0cd0d235f72f24ef4a59ff422351ecdda),
+[common: Add hint on how to set the script path](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/a90f42b0cd0d235f72f24ef4a59ff422351ecdda/plugins/common/input-device-example.sh),
 
 systemd config - /etc/vconsole.conf
 
