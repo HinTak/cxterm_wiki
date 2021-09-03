@@ -76,6 +76,8 @@ From Putty's documentation: "Application Keypad mode is a way for the server to 
 - Check `Preference >accessibility > Mouse: "Control the Pointer using keypad"` and/or `Settings > universal Access > pointing and clicking: "Mouse keys"`.
 Turn it off!
 
+- The LED is completely independent - `xset led named "Scroll Lock"` and similarly for `"Num Lock"` and  `"Caps Lock"` to turn them on (or of with `-led`).
+
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
