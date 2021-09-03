@@ -43,7 +43,7 @@ To
 ```
 
 Editing `/usr/share/X11/xkb/types/numpad` (where `numpad:mac` lives) with similar changes as `/usr/share/X11/xkb/symbols/macintosh_vndr/apple`
-(where the Apple Laptop/Aluminium definitions are) does not work.
+(where the Apple Laptop/Aluminium definitions are) does not work. Alternative to this is to create a new file under `/etc/udev/hwdb.d/` remapping keys.
 
 ## Putty's Function Keys and Keypad mapping
 
