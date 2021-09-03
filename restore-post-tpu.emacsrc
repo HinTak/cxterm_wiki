@@ -28,3 +28,7 @@
 ; Bind Backspace/CTRL-h to the missing tpu-delete-current-char function:
 
 (define-key tpu-global-map [backspace] 'tpu-delete-current-char)
+
+; ------------------------------------------------------------------------------
+; Turn selection high-lighting on:
+(global-hi-lock-mode 1)
