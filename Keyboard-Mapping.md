@@ -93,7 +93,7 @@ In gnome 3.6 onwards,
 [Bug 674221 - g-s-d's hotplug-command called only for mouse]((https://bugzilla.gnome.org/show_bug.cgi?id=674221),
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 Relevant: [keyboard: Run a custom command for new keyboards](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/a90f42b0cd0d235f72f24ef4a59ff422351ecdda),
-[common: Add hint on how to set the script path](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/a90f42b0cd0d235f72f24ef4a59ff422351ecdda/plugins/common/input-device-example.sh),
+[common: Add hint on how to set the script path](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/a90f42b0cd0d235f72f24ef4a59ff422351ecdda/plugins/common/input-device-example.sh), [Bug 674251 - Documentation not clear when g-s-d doesn't apply settings after hotplug-command](https://bugzilla.gnome.org/show_bug.cgi?id=674251), [Bug 635486 - Allow custom command to run on input device hotplug/removal](https://bugzilla.gnome.org/show_bug.cgi?id=635486)
 
 ## Wayland
 
