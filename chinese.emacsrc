@@ -10,3 +10,7 @@
 (if (boundp 'buffer-file-coding-system)
     (setq-default buffer-file-coding-system 'gb2312)
   (setq default-buffer-file-coding-system 'gb2312))
+
+;-------------------------------------------------------------------------------
+; Note:
+;     There is no "set-default-language-environment" function in emacs!
