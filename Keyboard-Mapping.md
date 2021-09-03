@@ -78,6 +78,11 @@ Turn it off!
 
 - The LED is completely independent - `xset led named "Scroll Lock"` and similarly for `"Num Lock"` and  `"Caps Lock"` to turn them on (or of with `-led`).
 
+## Xmodmap
+
+Xmodmap suppport was removed as early as 2010 Oct in
+[Bug 150542 - Keyboard lost in VNC session after launching keyboard capplet](https://bugzilla.gnome.org/show_bug.cgi?id=150542),
+[keyboard: Remove horrible xmodmap fallback code](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/commit/4239cb8a5d73af79d2cdf0f294a33d31fbbb9afe).
 [Bug 873656 - .Xmodmap file not loaded by Gnome 3.x](https://bugzilla.redhat.com/show_bug.cgi?id=873656) - in Gnome 3.6 onwards,
 the settings are forgotten after every suspend/resume; it become invalid when you switch to next ibus input method.
 
