@@ -1,5 +1,9 @@
+; -*- mode: lisp -*-
 ;;
 ;; The below is equivalent to running:
 ;;     emacs -l tpu-edt -f tpu-edt
 ;;
-(require 'tpu-edt) (tpu-edt)
+
+(let ((message-log-max nil) ; Don't write to the message buffer
+      (inhibit-message t))  ; Don't echo - Introduced in 25.1
+  (progn (require 'tpu-edt) (tpu-edt)))
