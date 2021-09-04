@@ -1,3 +1,4 @@
+; -*- mode: lisp -*-
 ; ------------------------------------------------------------------------------
 ; Restore CTRL-\ for toggling input method, to GOLD-\
 ; - this file is expected to be loaded after Chinese environment then tpu-edt.
@@ -31,8 +32,9 @@
 
 ; Bind Backspace/CTRL-h to the 'delete-backward-char function:
 ;     - in X11 ctrl-? is really ctrl-shift-/, but generates 127/DEL in text mode.
-
-(define-key tpu-global-map [backspace] 'delete-backward-char)
+(when (eq window-system 'x)
+  (define-key tpu-global-map [backspace] 'delete-backward-char)
+  )
 
 ; ------------------------------------------------------------------------------
 ; Turn selection high-lighting on:
