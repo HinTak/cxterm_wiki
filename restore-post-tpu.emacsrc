@@ -27,7 +27,12 @@
 
 ; Bind Backspace/CTRL-h to the missing tpu-delete-current-char function:
 
-(define-key tpu-global-map [backspace] 'tpu-delete-current-char)
+;*; (define-key tpu-global-map [backspace] 'tpu-delete-current-char)
+
+; Bind Backspace/CTRL-h to the 'delete-current-char function:
+;     - in X11 ctrl-? is not bound, but generates 127/DEL in text mode.
+
+(define-key tpu-global-map [backspace] 'delete-backward-char)
 
 ; ------------------------------------------------------------------------------
 ; Turn selection high-lighting on:
