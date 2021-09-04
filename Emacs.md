@@ -49,6 +49,11 @@ of the current file buffer content.
 
 - `(global-set-key [kp-5] 'goto-line)` to bind keypad-5 to `goto-line`.
 
+- It is not a good idea to rebind `ESC` (`Meta` and `\C-[`), see [description of meta-prefix-char](https://www.gnu.org/software/emacs/manual/html_node/elisp/Functions-for-Key-Lookup.html) and [Meta-Character Syntax](https://www.gnu.org/software/emacs/manual/html_node/elisp/Meta_002dChar-Syntax.html), or [\C-h](https://www.gnu.org/software/emacs/manual/html_node/elisp/Help-Functions.html), or
+[\C-i quirk](https://www.gnu.org/software/emacs/manual/html_node/elisp/Ctl_002dChar-Syntax.html).
+[Ordinary text terminals have no way of generating non-ASCII control characters.](https://www.gnu.org/software/emacs/manual/html_node/elisp/Ctl_002dChar-Syntax.html).
+[Other Character Modifier Bits](https://www.gnu.org/software/emacs/manual/html_node/elisp/Other-Char-Bits.html), [Basic Char Syntax](https://gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html)
+
 ## tpu-edt bugs
 
 - It seems to bind GOLD-GOLD (hitting the GOLD key twice) to `'keyboard-quit`. This seems wrong.
