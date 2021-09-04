@@ -1,4 +1,0 @@
-; restore ctrl-\ for toggling input method, to GOLD-\
-; - this file is expected to be loaded after Chinese environment then tpu-edt.
-
-(define-key tpu-gold-map "\\" 'toggle-input-method)
