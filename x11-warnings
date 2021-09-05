@@ -1,0 +1,19 @@
+These default coding systems were tried to encode text
+in the buffer ‘tpu-x11’:
+  (gb2312 (328 . 160) (339 . 161) (468 . 173) (479 . 183) (586 . 171)
+  (597 . 175) (608 . 187) (619 . 191) (630 . 169) (641 . 163) (700
+  . 182))
+However, each of them encountered characters it couldn’t encode:
+  gb2312 cannot encode these:   ¡ ­ · « ¯ » ¿ © £ ...
+
+Click on a character (or switch to this window by ‘C-x o’
+and select the characters by RET) to jump to the place it appears,
+where ‘M-x universal-argument C-x =’ will give information about it.
+
+Select one of the safe coding systems listed below,
+or cancel the writing with C-g and edit the buffer
+   to remove or modify the problematic characters,
+or specify any other coding system (and risk losing
+   the problematic characters).
+
+  raw-text no-conversion
