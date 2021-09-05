@@ -4,6 +4,14 @@
 ;;     emacs -l tpu-edt -f tpu-edt
 ;;
 
+; Emacs Lisp Reference Manual:
+;     39.4.1 Displaying Messages in the Echo Area
+;     ...
+;     When inhibit-message is non-nil, no message will be displayed in the echo area, it will only be logged to ‘*Messages*’.
+;
+; To completely erase the message buffer:
+;     (kill-buffer "*Messages*")
+
 (let ((message-log-max nil) ; Don't write to the message buffer
       (inhibit-message t))  ; Don't echo - Introduced in 25.1
   (progn (require 'tpu-edt) (tpu-edt)))
