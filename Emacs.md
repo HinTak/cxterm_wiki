@@ -54,10 +54,6 @@ of the current file buffer content.
 [Ordinary text terminals have no way of generating non-ASCII control characters.](https://www.gnu.org/software/emacs/manual/html_node/elisp/Ctl_002dChar-Syntax.html).
 [Other Character Modifier Bits](https://www.gnu.org/software/emacs/manual/html_node/elisp/Other-Char-Bits.html), [Basic Char Syntax](https://gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html)
 
-## tpu-edt bugs
-
-- It seems to bind GOLD-GOLD (hitting the GOLD key twice) to `'keyboard-quit`. This seems wrong.
-
 ## EDT bugs
 
 - [#50364 27.2; EDT mode Xmodmap related documentation needs updating](https://debbugs.gnu.org/cgi/bugreport.cgi?bug=50364)
