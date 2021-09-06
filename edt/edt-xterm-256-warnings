@@ -1,0 +1,17 @@
+These default coding systems were tried to encode text
+in the buffer â€˜edt-noxâ€™:
+  (utf-8-unix (1414 . 4194175) (1436 . 4194176) (1441 . 4194303))
+However, each of them encountered characters it couldnâ€™t encode:
+  utf-8-unix cannot encode these: ø¿½¿ € ÿ
+
+Click on a character (or switch to this window by â€˜C-x oâ€™
+and select the characters by RET) to jump to the place it appears,
+where â€˜M-x universal-argument C-x =â€™ will give information about it.
+
+Select one of the safe coding systems listed below,
+or cancel the writing with C-g and edit the buffer
+   to remove or modify the problematic characters,
+or specify any other coding system (and risk losing
+   the problematic characters).
+
+  raw-text no-conversion
