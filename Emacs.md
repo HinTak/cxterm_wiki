@@ -58,6 +58,8 @@ of the current file buffer content.
 
 - [#50364 27.2; EDT mode Xmodmap related documentation needs updating](https://debbugs.gnu.org/cgi/bugreport.cgi?bug=50364)
 
+- edt-mapper: When numlock is on, keypad keys are alias'ed to `[deletechar]`, '[up]', etc. TPU mapper generates `[kp-delete]`, `[kp-up]`, etc.
+
 # Latest Manuals:
 
 - [GNU emacs 27, pdf](https://www.gnu.org/software/emacs/manual/pdf/emacs.pdf)
