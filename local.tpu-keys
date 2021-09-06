@@ -50,7 +50,7 @@
 
 ;;  GOLD PF keys
 ;;
-(define-key tpu-gold-map [clear] 'keyboard-quit)
+;(define-key tpu-gold-map [clear] 'keyboard-quit)
 (define-key tpu-gold-map [kp-divide] 'help-for-help)
 (define-key tpu-gold-map [kp-multiply] 'tpu-search)
 (define-key tpu-gold-map [kp-subtract] 'tpu-undelete-lines)
