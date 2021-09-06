@@ -37,6 +37,8 @@
 
 ;;  F10-14 Help Do F17
 ;;
+(define-key tpu-global-map [f10] 'tpu-exit)
+(define-key tpu-global-map [f11] 'tpu-insert-escape)
 (define-key tpu-global-map [backspace] 'tpu-next-beginning-of-line)
 
 ;;  GOLD Arrows
@@ -48,7 +50,7 @@
 
 ;;  GOLD PF keys
 ;;
-;(define-key tpu-gold-map [clear] 'keyboard-quit)
+(define-key tpu-gold-map [clear] 'keyboard-quit)
 (define-key tpu-gold-map [kp-divide] 'help-for-help)
 (define-key tpu-gold-map [kp-multiply] 'tpu-search)
 (define-key tpu-gold-map [kp-subtract] 'tpu-undelete-lines)
@@ -75,6 +77,8 @@
 
 ;;  GOLD F10-14 Help Do F17
 ;;
+(define-key tpu-gold-map [f10] 'nil)
+(define-key tpu-gold-map [f11] 'nil)
 (define-key tpu-gold-map [backspace] 'nil)
 
 ;;  Minibuffer map additions to make KP_enter = RET
