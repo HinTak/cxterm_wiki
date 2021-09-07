@@ -56,7 +56,14 @@ From Putty's documentation: "Application Keypad mode is a way for the server to 
 
 ![Putty config](Screenshot-putty-config.png)
 
-[VK_BEGIN on X Windows vs VK_CLEAR on Windows, for num_lock + keypad 5 - JDK-4850137, 2003](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4850137) . Found it in Putty's Windows terminal code.
+[VK_BEGIN on X Windows vs VK_CLEAR on Windows, for num_lock + keypad 5 - JDK-4850137, 2003](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4850137),
+[JDK-4620715 : No way to see the Context Menu key on the windows keyboards](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4620715),
+[J2SETM 1.5.0 Beta 1 release notes](https://docs.oracle.com/cd/E17802_01/j2se/j2se/1.5.0/jcp/beta1/),
+[VK_WINDOWS](https://docs.oracle.com/cd/E17802_01/j2se/j2se/1.5.0/jcp/beta1/apidiffs/java/awt/event/KeyEvent.html#VK_WINDOWS),
+[VK_CONTEXT_MENU](https://docs.oracle.com/cd/E17802_01/j2se/j2se/1.5.0/jcp/beta1/apidiffs/java/awt/event/KeyEvent.html#VK_CONTEXT_MENU),
+[VK_CLEAR](https://docs.oracle.com/cd/E17802_01/j2se/j2se/1.5.0/jcp/beta1/apidiffs/java/awt/event/KeyEvent.html#VK_CLEAR),
+[VK_BEGIN](https://docs.oracle.com/cd/E17802_01/j2se/j2se/1.5.0/jcp/beta1/apidiffs/java/awt/event/KeyEvent.html#VK_BEGIN)
+. Found it in Putty's Windows terminal code.
 
 On Solaris, the numpad /*- keys produce F24, F25, F26;  but in
 Java we map them to /*- anyway.  dtterm acts similar to Java. dtterm also
