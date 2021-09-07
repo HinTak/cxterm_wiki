@@ -56,7 +56,11 @@ From Putty's documentation: "Application Keypad mode is a way for the server to 
 
 ![Putty config](Screenshot-putty-config.png)
 
-[VK_BEGIN on X Windows vs VK_CLEAR on Windows, for num_lock + keypad 5](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4850137) . Found it in Putty's Windows terminal code.
+[VK_BEGIN on X Windows vs VK_CLEAR on Windows, for num_lock + keypad 5 - JDK-4850137, 2003](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4850137) . Found it in Putty's Windows terminal code.
+
+On Solaris, the numpad /*- keys produce F24, F25, F26;  but in
+Java we map them to /*- anyway.  dtterm acts similar to Java. dtterm also
+produces a 5 when the numpad 5 key is pressed, but numlock is off (F31).
 
 # Other tips on Debugging
 
