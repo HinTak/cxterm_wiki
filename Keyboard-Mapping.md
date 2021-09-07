@@ -56,6 +56,8 @@ From Putty's documentation: "Application Keypad mode is a way for the server to 
 
 ![Putty config](Screenshot-putty-config.png)
 
+[VK_BEGIN on X Windows vs VK_CLEAR on Windows, for num_lock + keypad 5](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=4850137) . Found it in Putty's Windows terminal code.
+
 # Other tips on Debugging
 
 - `xkbcomp :0.0` writes the keymap into `server-0_0.xkb`.
