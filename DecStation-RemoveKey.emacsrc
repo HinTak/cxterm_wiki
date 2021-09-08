@@ -1,0 +1,21 @@
+; -*- mode: lisp -*-
+;; From https://groups.google.com/g/comp.sys.dec/c/St9icg23Aqo
+
+(defvar CSI-map nil " ")
+(if (not CSI-map)
+    (progn
+      (setq CSI-map (make-keymap))
+      (define-key global-map "\e[" CSI-map)
+      (define-key CSI-map "1~" 'set-mark-command) ;; Find
+      (define-key CSI-map "2~" 'beginning-of-line) ;; Insert Here
+      (define-key CSI-map "3~" 'scroll-down) ;; Remove
+      (define-key CSI-map "4~" 'delete-char) ;; Select
+      (define-key CSI-map "5~" 'end-of-line) ;; Prev Screen
+      (define-key CSI-map "6~" 'scroll-up) ;; Next Screen
+      (define-key CSI-map "25~" 'beginning-of-buffer) ;; F13
+      (define-key CSI-map "26~" 'end-of-buffer) ;; F14
+      ))
+
+;; Remove key sends ^[[3~
+
+;; Redefining the Remove key to the Do/Menu/F16, which sends ^[[29~
