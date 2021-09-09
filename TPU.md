@@ -51,3 +51,6 @@ Subject: [PATCH] (tpu-gold-map): Rename from GOLD-map. (tpu-lucid-emacs-p):
  Add all the SS3 and CSI bindings, using keysyms rather than byte sequences.
  (tpu-copy-keyfile): Don't force the user to use tpu-mapper.el.
 ```
+
+Putty 0.58 (released 2005-04-05) itself gained support for right-to-left and bidirectional text (Arabic, Hebrew etc), Arabic text shaping,
+xterm 256-colour control sequences. So that's about the same time as emacs 23's CSI/SS3 map's got re-arranged.
