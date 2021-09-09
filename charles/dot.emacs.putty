@@ -1,0 +1,37 @@
+(set-language-environment "Chinese-GB")
+(prefer-coding-system 'gb2312)
+(set-default-coding-systems 'gb2312)
+(set-buffer-file-coding-system 'gb2312)
+(setq default-buffer-file-coding-system 'gb2312)
+
+(require 'tpu-edt) (tpu-edt-on)
+;(add-hook term-setup-hook 'edt-emulation-on)
+
+(define-key tpu-gold-map "\\" 'toggle-input-method)
+
+(if (eq system-uses-terminfo t)
+    (progn
+      (define-key tpu-global-map [f1] tpu-gold-map)
+      (define-key tpu-global-map [f2] 'tpu-help)
+      (define-key tpu-global-map [f3] 'tpu-search)
+      (define-key tpu-global-map [f4] 'tpu-delete-current-line)
+
+; keys insert, home, page up
+; delete, end, page down
+
+      (define-key tpu-global-map [insertchar] 'tpu-search)
+      (define-key tpu-global-map [home] 'tpu-paste)
+      (define-key tpu-global-map [prior] 'tpu-cut)
+      (define-key tpu-global-map [deletechar] 'tpu-select)
+      (define-key tpu-global-map [select] 'tpu-scroll-window-up)
+      (define-key tpu-global-map [next] 'tpu-scroll-window-down)
+
+;; GOLD +
+;;                page up
+;; delete, end,    page down
+      (define-key tpu-gold-map [prior] 'tpu-store-text)
+      (define-key tpu-gold-map [deletechar] 'tpu-unselect)
+      (define-key tpu-gold-map [select] 'tpu-previous-window)
+      (define-key tpu-gold-map [next] 'tpu-previous-window)
+      )
+  )
