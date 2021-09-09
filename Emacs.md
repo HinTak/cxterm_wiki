@@ -73,7 +73,7 @@ Also [Annnotated sample xmodmap file](xmodmap.txt) for re-mapping the Num_Lock a
 Reference: [Intro to emacs Lisp Programming](https://www.gnu.org/software/emacs/manual/pdf/eintr.pdf) and
 [Emacs Lisp Reference](https://www.gnu.org/software/emacs/manual/pdf/elisp.pdf)
 
-[Emacs FAQ](https://www.gnu.org/software/emacs/manual/html_mono/efaq.html) contains a whole sections on key bindings.
+[Emacs FAQ](https://www.gnu.org/software/emacs/manual/html_mono/efaq.html#Key-bindings) contains a whole sections on key bindings.
 
 # Built-in Help:
 
