@@ -23,8 +23,8 @@
       (define-key tpu-global-map [home] 'tpu-paste)
       (define-key tpu-global-map [prior] 'tpu-cut)
       (define-key tpu-global-map [deletechar] 'tpu-select)
-      (define-key tpu-global-map [select] 'tpu-scroll-window-up)
-      (define-key tpu-global-map [next] 'tpu-scroll-window-down)
+      (define-key tpu-global-map [select] 'tpu-scroll-window-down)
+      (define-key tpu-global-map [next] 'tpu-scroll-window-up)
 
 ;; GOLD +
 ;;                page up

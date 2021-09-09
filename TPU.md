@@ -40,5 +40,3 @@ Subject: [PATCH] (tpu-gold-map): Rename from GOLD-map. (tpu-lucid-emacs-p):
  Add all the SS3 and CSI bindings, using keysyms rather than byte sequences.
  (tpu-copy-keyfile): Don't force the user to use tpu-mapper.el.
 ```
-
-Bug: `'tpu-scroll-window-down` and `'tpu-scroll-window-up` with `Prev Screen` and `Next Screen` was swapped in emacs 22.
