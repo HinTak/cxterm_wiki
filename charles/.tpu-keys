@@ -38,8 +38,8 @@
 (define-key tpu-global-map [home] 'tpu-paste)
 (define-key tpu-global-map [prior] 'tpu-cut)
 (define-key tpu-global-map [delete] 'tpu-select)
-(define-key tpu-global-map [end] 'tpu-scroll-window-down)
-(define-key tpu-global-map [next] 'tpu-scroll-window-up)
+(define-key tpu-global-map [end] 'tpu-scroll-window-up)
+(define-key tpu-global-map [next] 'tpu-scroll-window-down)
 
 ;;  F10-14 Help Do F17
 ;;
