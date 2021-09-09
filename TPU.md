@@ -27,3 +27,16 @@ Update example.
 
 * etc/NEWS: Mention this.
 ```
+
+emacs 23:
+
+```
+From 86dd4d035fd5e742a06bd2ad3b144deb765f88a8 Mon Sep 17 00:00:00 2001
+From: Stefan Monnier <monnier@iro.umontreal.ca>
+Date: Tue, 12 Jun 2007 04:55:40 +0000
+Subject: [PATCH] (tpu-gold-map): Rename from GOLD-map. (tpu-lucid-emacs-p):
+ Remove.  Use (featurep 'xemacs) instead. (CSI-map, GOLD-CSI-map,
+ GOLD-SS3-map, SS3-map):	Delete vars. (tpu-gold-map, tpu-global-map):
+ Add all the SS3 and CSI bindings, using keysyms rather than byte sequences.
+ (tpu-copy-keyfile): Don't force the user to use tpu-mapper.el.
+```
