@@ -1,0 +1,104 @@
+;;  Key definitions for TPU-edt
+;;
+
+;;  Arrows
+;;
+(define-key tpu-global-map [up] 'tpu-previous-line)
+(define-key tpu-global-map [down] 'tpu-next-line)
+(define-key tpu-global-map [right] 'tpu-forward-char)
+(define-key tpu-global-map [left] 'tpu-backward-char)
+
+;;  PF keys
+;;
+(define-key tpu-global-map [clear] tpu-gold-map)
+(define-key tpu-global-map [kp-divide] 'tpu-help)
+(define-key tpu-global-map [kp-multiply] 'tpu-search-again)
+(define-key tpu-global-map [kp-subtract] 'tpu-delete-current-line)
+
+;;  KP0-9 KP- KP, KP. and KPenter
+;;
+(define-key tpu-global-map [kp-0] 'tpu-line)
+(define-key tpu-global-map [kp-1] 'tpu-word)
+(define-key tpu-global-map [kp-2] 'tpu-end-of-line)
+(define-key tpu-global-map [kp-3] 'tpu-char)
+(define-key tpu-global-map [kp-4] 'tpu-advance-direction)
+(define-key tpu-global-map [kp-5] 'tpu-backup-direction)
+(define-key tpu-global-map [kp-6] 'tpu-cut)
+(define-key tpu-global-map [kp-7] 'tpu-page)
+(define-key tpu-global-map [kp-8] 'tpu-scroll-window)
+(define-key tpu-global-map [kp-9] 'tpu-append-region)
+(define-key tpu-global-map [kp-add] 'tpu-delete-current-word)
+(define-key tpu-global-map [kp-decimal] 'tpu-select)
+(define-key tpu-global-map [kp-enter] 'newline)
+
+;;  Editing keypad (find, insert, remove)
+;;                 (select, prev, next)
+;;
+(define-key tpu-global-map [insert] 'tpu-search)
+(define-key tpu-global-map [home] 'tpu-paste)
+(define-key tpu-global-map [prior] 'tpu-cut)
+(define-key tpu-global-map [delete] 'tpu-select)
+(define-key tpu-global-map [end] 'tpu-scroll-window-down)
+(define-key tpu-global-map [next] 'tpu-scroll-window-up)
+
+;;  F10-14 Help Do F17
+;;
+;(define-key tpu-global-map [backspace] 'tpu-next-beginning-of-line)
+
+;;  GOLD Arrows
+;;
+(define-key tpu-gold-map [up] 'tpu-move-to-beginning)
+(define-key tpu-gold-map [down] 'tpu-move-to-end)
+(define-key tpu-gold-map [right] 'end-of-line)
+(define-key tpu-gold-map [left] 'beginning-of-line)
+
+;;  GOLD PF keys
+;;
+;(define-key tpu-gold-map [Num_Lock] 'keyboard-quit)
+(define-key tpu-gold-map [kp-divide] 'help-for-help)
+(define-key tpu-gold-map [kp-multiply] 'tpu-search)
+(define-key tpu-gold-map [kp-subtract] 'tpu-undelete-lines)
+
+;;  GOLD KP0-9 KP- KP, and KPenter
+;;
+(define-key tpu-gold-map [kp-0] 'open-line)
+(define-key tpu-gold-map [kp-1] 'tpu-change-case)
+(define-key tpu-gold-map [kp-2] 'tpu-delete-to-eol)
+(define-key tpu-gold-map [kp-3] 'tpu-special-insert)
+(define-key tpu-gold-map [kp-4] 'tpu-move-to-end)
+(define-key tpu-gold-map [kp-5] 'tpu-move-to-beginning)
+(define-key tpu-gold-map [kp-6] 'tpu-paste)
+(define-key tpu-gold-map [kp-7] 'execute-extended-command)
+(define-key tpu-gold-map [kp-8] 'tpu-fill)
+(define-key tpu-gold-map [kp-9] 'tpu-replace)
+(define-key tpu-gold-map [kp-add] 'tpu-undelete-words)
+(define-key tpu-gold-map [kp-decimal] 'tpu-unselect)
+(define-key tpu-gold-map [kp-enter] 'tpu-substitute)
+
+;;  GOLD Editing keypad (find, insert, remove)
+;;                      (select, prev, next)
+;;
+(define-key tpu-gold-map [insert] 'nil)
+(define-key tpu-gold-map [home] 'nil)
+(define-key tpu-gold-map [prior] 'tpu-store-text)
+(define-key tpu-gold-map [delete] 'tpu-unselect)
+(define-key tpu-gold-map [end] 'tpu-previous-window)
+(define-key tpu-gold-map [next] 'tpu-next-window)
+
+;;  GOLD F10-14 Help Do F17
+;;
+(define-key tpu-gold-map [backspace] 'nil)
+
+;;  Minibuffer map additions to make KP_enter = RET
+;;
+(define-key minibuffer-local-map [kp-enter] 'exit-minibuffer)
+(define-key minibuffer-local-must-match-map [kp-enter] 'minibuffer-complete-and-exit)
+
+;;  Minibuffer map additions to allow KP-4/5 termination of search strings.
+;;
+(define-key minibuffer-local-map [kp-4] 'tpu-search-forward-exit)
+(define-key minibuffer-local-map [kp-5] 'tpu-search-backward-exit)
+
+;;  Define the tpu-help-enter/return symbols
+;;
+(setq tpu-help-enter "[kp-enter]")
