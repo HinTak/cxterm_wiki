@@ -1,3 +1,14 @@
+emacs 26:
+
+```
+From 9edf82a6d6f2c8f510f5bf99eef7f2ae5397208d Mon Sep 17 00:00:00 2001
+From: Glenn Morris <rgm@gnu.org>
+Date: Tue, 13 Mar 2018 13:49:53 -0400
+Subject: [PATCH] Replace an obsolete alias in tpu-mapper
+
+* lisp/obsolete/tpu-mapper.el (tpu-map-key, tpu-mapper):
+Replace obsolete alias.
+```
 
 emacs 25:
 
