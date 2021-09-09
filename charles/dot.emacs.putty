@@ -32,6 +32,6 @@
       (define-key tpu-gold-map [prior] 'tpu-store-text)
       (define-key tpu-gold-map [deletechar] 'tpu-unselect)
       (define-key tpu-gold-map [select] 'tpu-previous-window)
-      (define-key tpu-gold-map [next] 'tpu-previous-window)
+      (define-key tpu-gold-map [next] 'tpu-next-window)
       )
   )
