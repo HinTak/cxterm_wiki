@@ -1,3 +1,5 @@
+; -*- mode: lisp -*-
+
 (set-language-environment "Chinese-GB")
 (prefer-coding-system 'gb2312)
 (set-default-coding-systems 'gb2312)
