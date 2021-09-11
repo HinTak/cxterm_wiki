@@ -92,3 +92,18 @@ Older versions are under
 [emacs25](http://old-releases.ubuntu.com/ubuntu/pool/universe/e/emacs25/).
 
 Some older packaging is missing [dfsg](https://en.wikipedia.org/wiki/Debian_Free_Software_Guidelines)-compliance.
+
+# Historical
+
+Variable `default-enable-multibyte-characters` is obsolete since 23.2. The variable `enable-multibyte-characters` is buffer-local,
+and cannot be set directly, but only via the function `set-buffer-multibyte`.
+
+Changes in Emacs 23.2:
+
+```
+*** Unibyte sessions are now considered obsolete.
+This refers to the EMACS_UNIBYTE environment variable as well as the
+--unibyte, --multibyte, --no-multibyte, and --no-unibyte command line
+arguments.  Customizing enable-multibyte-characters and setting
+default-enable-multibyte-characters are also deprecated.
+```
