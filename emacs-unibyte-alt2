@@ -1,0 +1,13 @@
+#!/usr/bin/emacs --script
+
+; This is a failure. Kept as a scripting example.
+
+; emacs --script does not accept co-operations with any any other arguments. (-nw, -Q, etc)
+;     It seems also to imply --batch.
+
+(defun main ()
+  (setq unibyte-display-via-language-environment t)
+  ; find-file-literally needs a string, not a symbol as input.
+  (find-file-literally (format "%s" command-line-args-left)))
+
+(main)
