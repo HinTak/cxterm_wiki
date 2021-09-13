@@ -11,6 +11,7 @@
 # There are three ways to edit a particular file in unibyte representation:
 #
 #   - Visit it using "find-file-literally"
+#       Also mentioned in https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Text-Coding
 #
 #   - Using "raw-text" as the coding system
 #
