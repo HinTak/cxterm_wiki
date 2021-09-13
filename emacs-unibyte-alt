@@ -14,9 +14,12 @@
       (car list)
     (find-last (cdr list))))
 
+(defun find-last-simple (list)
+  (car (last list)))
+
 (defun main ()
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
-  (find-file-literally (format "%s" (find-last command-line-args-left))))
+  (find-file-literally (format "%s" (find-last-simple command-line-args-left))))
 
 ;(main)
