@@ -7,26 +7,9 @@
 ; We empty the command-line-args-left list at the end to avoid open the file
 ; twice, once in uni-byte mode then immediately as multi-byte mode.
 
-; Earlier version of this script opens three files:
-;   main() in -l tries to open `pwd`/"(-f main -l tpu.emacsrc args)"
-;   -f main      tries to open `pwd`/"(-l tpu.emacsrc args)"
-;   emacs itself tries to open `pwd`/args
-
-(defun find-last (list)
-  (if (null (cdr list))
-      (car list)
-    (find-last (cdr list))))
-
-(defun find-last-simple (list)
-  (car (last list)))
-
 (defun main ()
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
-  (find-file-literally (format "%s" (find-last-simple command-line-args-left)))
-  ; Emacs processes all command line arguments immediately,
-  ; in order of their appearance. After processing, each argument
-  ; is removed from argv. Hence we can remove them here.
+  (find-file-literally (format "%s" (car (last command-line-args-left))))
   (setq command-line-args-left nil)             ; avoid opening file twice
   )
-;(main)
