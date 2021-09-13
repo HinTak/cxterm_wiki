@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Editng a file with emacs 23+ in unibyte mode.
+
+# 2021 (c) Hin-Tak Leung 
+
+
+# Reference:
+#     https://www.gnu.org/software/emacs/manual/html_mono/elisp.html#Disabling-Multibyte
+#
+# There are three ways to edit a particular file in unibyte representation:
+#
+#   - Visit it using "find-file-literally"
+#
+#   - Using "raw-text" as the coding system
+#
+#   - Invoking the command "toggle-enable-multibyte-characters" in that buffer
+#
+# Before emacs 23, there was an "--unibyte" option. 
+
+emacs -Q --eval "(find-file-literally \"${1}\")"
+
