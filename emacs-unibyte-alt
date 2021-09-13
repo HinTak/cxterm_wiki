@@ -1,0 +1,8 @@
+:;exec emacs -l "$0" -f main "$@" # -*- mode: lisp -*-
+
+(defun main ()
+  (setq unibyte-display-via-language-environment t)
+  ; find-file-literally needs a string, not a symbol as input.
+  (find-file-literally (format "%s" command-line-args-left)))
+
+(main)
