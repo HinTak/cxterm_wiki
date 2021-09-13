@@ -1,8 +1,12 @@
 :;exec emacs -l "$0" -f main "$@" # -*- mode: lisp -*-
+(defun find-last (list)
+  (if (null (cdr list))
+      (car list)
+    (find-last (cdr list))))
 
 (defun main ()
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
-  (find-file-literally (format "%s" command-line-args-left)))
+  (find-file-literally (format "%s" (find-last command-line-args-left))))
 
 ;(main)
