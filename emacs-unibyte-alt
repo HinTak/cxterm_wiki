@@ -5,4 +5,4 @@
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" command-line-args-left)))
 
-(main)
+;(main)
