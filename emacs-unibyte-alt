@@ -24,6 +24,9 @@
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" (find-last-simple command-line-args-left)))
+  ; Emacs processes all command line arguments immediately,
+  ; in order of their appearance. After processing, each argument
+  ; is removed from argv. Hence we can remove them here.
   (setq command-line-args-left nil)             ; avoid opening file twice
   )
 ;(main)
