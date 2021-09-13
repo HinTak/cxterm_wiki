@@ -1,8 +1,11 @@
 :;exec emacs -l "$0" -f main "$@" # -*- mode: lisp -*-
 
-; This is somewhat a failure as it tries to open the file
+; Editng a file with emacs 23+ in unibyte mode; 2nd method
+
+; 2021 (c) Hin-Tak Leung
+
+; We empty the argv list at the end to avoid open the file
 ; twice, once in uni-byte mode then immediately as multi-byte mode.
-; User is prompted to cancel the 2nd opening.
 
 ; Earlier version of this script opens three files:
 ;   main() in -l tries to open `pwd`/"(-f main -l tpu.emacsrc args)"
@@ -20,6 +23,7 @@
 (defun main ()
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
-  (find-file-literally (format "%s" (find-last-simple command-line-args-left))))
-
+  (find-file-literally (format "%s" (find-last-simple command-line-args-left)))
+  (setq argv nil)             ; avoid opening file twice
+  )
 ;(main)
