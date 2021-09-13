@@ -1,4 +1,9 @@
 :;exec emacs -l "$0" -f main "$@" # -*- mode: lisp -*-
+
+; This is somewhat a failure as it tries to open the file
+; twice, once in uni-byte mode then immediately as multi-byte mode.
+; User is prompted to cancel the 2nd opening.
+
 (defun find-last (list)
   (if (null (cdr list))
       (car list)
