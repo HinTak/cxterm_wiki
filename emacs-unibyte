@@ -19,5 +19,5 @@
 #
 # Before emacs 23, there was an "--unibyte" option. 
 
-emacs -Q --eval "(find-file-literally \"${1}\")"
+emacs -Q -nw --eval "(progn (setq unibyte-display-via-language-environment t) (find-file-literally \"${1}\"))"
 
