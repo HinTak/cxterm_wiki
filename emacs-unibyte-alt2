@@ -5,6 +5,8 @@
 ; emacs --script does not accept co-operations with any any other arguments. (-nw, -Q, etc)
 ;     It seems also to imply --batch.
 
+; emacs --script was introduced in emacs 22.
+
 (defun main ()
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
