@@ -4,7 +4,7 @@
 
 ; 2021 (c) Hin-Tak Leung
 
-; We empty the argv list at the end to avoid open the file
+; We empty the command-line-args-left list at the end to avoid open the file
 ; twice, once in uni-byte mode then immediately as multi-byte mode.
 
 ; Earlier version of this script opens three files:
@@ -24,6 +24,6 @@
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" (find-last-simple command-line-args-left)))
-  (setq argv nil)             ; avoid opening file twice
+  (setq command-line-args-left nil)             ; avoid opening file twice
   )
 ;(main)
