@@ -133,6 +133,12 @@ Relevant: [keyboard: Run a custom command for new keyboards](https://gitlab.gnom
 
 See `man 5 Compose` for usage of a Compose key, via `~/.XCompose`.
 
+## Gnome
+
+Gnome terminal uses F11 for toggling full-screen - see
+[Help: Keyboard shortcuts](https://help.gnome.org/users/gnome-terminal/stable/adv-keyboard-shortcuts.html.en)
+and Gnome may use F10: [Design: Keyboard Shortcuts](https://wiki.gnome.org/Design/OS/KeyboardShortcuts).
+
 ## Wayland
 
 [[3.34] Weird numlock behaviour](https://gitlab.gnome.org/GNOME/mutter/-/issues/769), [g-s/master doesn't maintain a consistent numlock state over applications and g-s overview](https://gitlab.gnome.org/GNOME/mutter/-/issues/714)
