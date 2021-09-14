@@ -12,6 +12,8 @@
   (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
   (print (format "%S" command-line-args-left))
-  (find-file-literally (format "%s" command-line-args-left)))
+  (find-file-literally (format "%s" (car (last command-line-args-left))))
+  (setq command-line-args-left nil)             ; avoid opening file twice
+  )
 
 (main)
