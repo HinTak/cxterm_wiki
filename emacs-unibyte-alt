@@ -1,4 +1,6 @@
 :;exec emacs -l "$0" -f main "$@" # -*- mode: lisp -*-
+;
+; WARNING: This script intentionally does not start with "#!". Please do not "correct" it.
 
 ; Editng a file with emacs 23+ in unibyte mode; 2nd method
 
