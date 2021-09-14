@@ -19,5 +19,10 @@
 #
 # Before emacs 23, there was an "--unibyte" option. 
 
+if [ "$#" -ne 1 ] || ! [ -e "$1" ]; then
+  echo "Usage: $0 EXISTING-FILENAME"
+  exit 1
+fi
+
 emacs -Q -nw --eval "(progn (setq unibyte-display-via-language-environment t) (find-file-literally \"${1}\"))"
 
