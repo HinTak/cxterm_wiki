@@ -9,6 +9,9 @@
 
 (defun main ()
   (setq unibyte-display-via-language-environment t)
+  (if (/= (length command-line-args-left) 1)
+      (kill-emacs 1)
+    )
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" (car (last command-line-args-left))))
   (setq command-line-args-left nil)             ; avoid opening file twice
