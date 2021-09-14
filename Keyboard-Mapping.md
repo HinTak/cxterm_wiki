@@ -129,6 +129,10 @@ Relevant: [keyboard: Run a custom command for new keyboards](https://gitlab.gnom
 [common: Add hint on how to set the script path](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/a90f42b0cd0d235f72f24ef4a59ff422351ecdda/plugins/common/input-device-example.sh), [Bug 674251 - Documentation not clear when g-s-d doesn't apply settings after hotplug-command](https://bugzilla.gnome.org/show_bug.cgi?id=674251), [Bug 635486 - Allow custom command to run on input device hotplug/removal](https://bugzilla.gnome.org/show_bug.cgi?id=635486),
 [Bug 348198 - xkb keymap reset when external keyboard plugged in](https://bugs.kde.org/show_bug.cgi?id=348198)
 
+## Compose
+
+See `man 5 Compose` for usage of a Compose key, via `~/.XCompose`.
+
 ## Wayland
 
 [[3.34] Weird numlock behaviour](https://gitlab.gnome.org/GNOME/mutter/-/issues/769), [g-s/master doesn't maintain a consistent numlock state over applications and g-s overview](https://gitlab.gnome.org/GNOME/mutter/-/issues/714)
