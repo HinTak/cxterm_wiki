@@ -8,12 +8,13 @@
 ; twice, once in uni-byte mode then immediately as multi-byte mode.
 
 (defun main ()
-  (setq unibyte-display-via-language-environment t)
   (if (or (/= (length command-line-args-left) 1)
           (not (file-exists-p (car (last command-line-args-left)))))
       (progn (princ "Usage: emacs-unibyte-alt EXISTING-FILENAME\n" #'external-debugging-output)
              (kill-emacs 1))
     )
+  ;
+  (setq unibyte-display-via-language-environment t)
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" (car (last command-line-args-left))))
   (setq command-line-args-left nil)             ; avoid opening file twice
