@@ -11,7 +11,8 @@
   (setq unibyte-display-via-language-environment t)
   (if (or (/= (length command-line-args-left) 1)
           (not (file-exists-p (car (last command-line-args-left)))))
-      (kill-emacs 1)
+      (progn (princ "Usage: emacs-unibyte-alt EXISTING-FILENAME\n" #'external-debugging-output)
+             (kill-emacs 1))
     )
   ; find-file-literally needs a string, not a symbol as input.
   (find-file-literally (format "%s" (car (last command-line-args-left))))
