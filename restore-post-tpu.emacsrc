@@ -32,7 +32,7 @@
 
 ; Bind Backspace/CTRL-h to the 'delete-backward-char function:
 ;     - in X11 ctrl-? is really ctrl-shift-/, but generates 127/DEL in text mode.
-(when (eq window-system 'x)
+(when (eq window-system 'x)  ; "(when (display-graphic-p)" is prefered for non-X GUI tests
   (define-key tpu-global-map [backspace] 'delete-backward-char)
   )
 
