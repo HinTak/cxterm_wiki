@@ -32,10 +32,23 @@
 
 ; Bind Backspace/CTRL-h to the 'delete-backward-char function:
 ;     - in X11 ctrl-? is really ctrl-shift-/, but generates 127/DEL in text mode.
-(when (eq window-system 'x)  ; "(when (display-graphic-p)" is prefered for non-X GUI tests
-  (define-key tpu-global-map [backspace] 'delete-backward-char)
-  )
+
+;*;(when (eq window-system 'x)  ; "(when (display-graphic-p)" is prefered for non-X GUI tests
+;*;  (define-key tpu-global-map [backspace] 'delete-backward-char)
+;*;  )
+
+; No need as it seems to be a TPU bug - just commenting the [backspace] line in
+; .tpu-keys is better.
 
 ; ------------------------------------------------------------------------------
 ; Turn selection high-lighting on:
 (global-hi-lock-mode 1)
+
+; ------------------------------------------------------------------------------
+; make GOLD-j toggle between unibyte and multibyte mode:
+
+; try to display bytes as accented european:
+(setq unibyte-display-via-language-environment t)
+
+; only GOLD-h and GOLD-j are unused.
+(define-key tpu-gold-map "j" 'toggle-enable-multibyte-characters)
