@@ -145,6 +145,8 @@ and Gnome may use F10: [Design: Keyboard Shortcuts](https://wiki.gnome.org/Desig
 
 #
 
+[Table of keyboard shortcuts](https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts)
+
 systemd config - /etc/vconsole.conf
 
 /etc/X11/xorg.conf.d/00-keyboard.conf
